@@ -1,0 +1,107 @@
+
+ /* Basic reset */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ /* Body styles */
+ body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   background-color: #f4f4f4;
+   color: #333;
+ }
+
+ /* Header styles */
+ header {
+   background: #007BFF; /* Blue background */
+   color: #fff;
+   padding: 1rem 0;
+   text-align: center;
+ }
+
+ header h1 {
+   margin-bottom: 0.5rem;
+ }
+
+ nav {
+   margin-top: 0.5rem;
+ }
+
+ nav a {
+   color: #fff;
+   text-decoration: none;
+   margin: 0 1rem;
+   font-weight: bold;
+ }
+
+ nav a:hover {
+   text-decoration: underline;
+ }
+
+ /* Main content styles */
+ main {
+   padding: 2rem;
+   background: #fff;
+   margin: 0 auto;
+   max-width: 1200px;
+ }
+
+ form {
+   display: grid;
+   gap: 1rem;
+ }
+
+ form label {
+   font-weight: bold;
+ }
+
+ form input {
+   padding: 0.5rem;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+ }
+
+ form button {
+   padding: 0.5rem;
+   background: #007BFF;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+ form button:hover {
+   background: #0056b3;
+ }
+
+ /* Footer styles */
+ footer {
+   background: #007BFF; /* Blue background */
+   color: #fff;
+   text-align: center;
+   padding: 1rem 0;
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+ }
+
+ /* Flight item styles */
+ .flight-item {
+   background: #f9f9f9;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   margin-bottom: 1rem;
+   padding: 1rem;
+ }
+
+ .flight-item h3 {
+   margin-top: 0;
+ }
+
+ .flight-item p {
+   margin: 0.5rem 0;
+ }
+

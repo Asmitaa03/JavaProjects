@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <h1>Book a Flight</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="flight-list.html">View Flights</a>
+  </nav>
+</header>
+<main>
+  <form id="reservation-form">
+    <h2>Reservation Form</h2>
+    <label for="flightId">Flight ID:</label>
+    <input type="text" id="flightId" name="flightId" required>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="seatsReserved">Seats Reserved:</label>
+    <input type="number" id="seatsReserved" name="seatsReserved" required>
+
+    <button type="submit">Reserve</button>
+  </form>
+</main>
+<footer>
+  <p>&copy; 2024 Airline Reservation System. All rights reserved.</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+

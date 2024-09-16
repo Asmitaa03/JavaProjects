@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Blog Home</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Link to CSS for styling -->
+</head>
+<body>
+<header>
+    <h1>Blog Home</h1>
+    <nav>
+        <a href="/" th:href="@{/}">Home</a>
+        <a href="/posts/create" th:href="@{/posts/create}">Create New Post</a>
+        <a href="/users/register" th:href="@{/users/register}">Register</a>
+        <a href="/login" th:href="@{/login}">Login</a>
+    </nav>
+</header>
+
+<main>
+
+    <div th:each="post : ${posts}">
+        <h2 th:text="${post.title}">Post Title</h2>
+        <p th:text="${post.content}">Post Content</p>
+        <a th:href="@{/posts/{id}(id=${post.id})}">Read More</a>
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 Blog Website</p>
+</footer>
+</body>
+</html>

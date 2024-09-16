@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title th:text="${post.title}">Post Title</title>
+</head>
+<body>
+<header>
+  <h1 th:text="${post.title}">Post Title</h1>
+  <nav>
+    <a href="/">Home</a>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <p th:text="${post.content}">Post Content</p>
+    <p>Posted on <span th:text="${post.createdAt}">Date</span></p>
+  </article>
+  <a th:href="@{/posts/edit/{id}(id=${post.id})}">Edit Post</a>
+</main>
+
+<footer>
+  <p>© 2024 Blog Website</p>
+</footer>
+</body>
+</html>
