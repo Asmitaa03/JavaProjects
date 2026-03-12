@@ -1,2 +1,2 @@
 # JavaProjects
-All my java projects are listed here.
+have listed some basic java projects here
